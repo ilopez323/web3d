@@ -1,0 +1,251 @@
+<html>
+  <head>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+  <a-scene cursor="rayOrigin: mouse">
+    <a-entity id="camera" camera position="0 1.6 0" wasd-controls look-controls></a-entity>
+        <a-assets>
+          <img id="fons" src="fons1.jpg" />
+          <img id="texturaterra" src="texturaterra.jpg" />
+          <img id="guernica" src="guernica.jpg" />        
+          <img id="cara" src="6.jpg" />            
+          <img id="bicicletes" src="7.jpg" />
+          <img id="puerta" src="12.jpg" />
+          <img id="sol" src="13.png" />
+          <img id="sole" src="13.jpg" />
+          <img id="gris" src="gris.jpg" />
+          <img id="rojo" src="rojo.jpg" />
+     
+        </a-assets>
+        <a-box position="48.56111 10.14082 -2.96557" rotation="0 -90 0" src="#puerta" depth="1.180" height="1.109" width="10.367" material="" geometry=""></a-box>
+        <a-box position="48.52773 4 -6.1412" rotation="" src="#puerta" depth="1" height="12" width="1" material="" geometry=""></a-box>
+        <a-box position="48.52637 4 0.3557" rotation="" src="#puerta" depth="1" height="12" width="1" material="" geometry=""></a-box>
+
+        <a-box position="-48.56111 10.14082 -2.96557" rotation="0 -90 0" src="#puerta" depth="1.180" height="1.109" width="10.367" material="" geometry=""></a-box>
+        <a-box position="-48.52773 4 -6.1412" rotation="" src="#puerta" depth="1" height="12" width="1" material="" geometry=""></a-box>
+        <a-box position="-48.52637 4 0.3557" rotation="" src="#puerta" depth="1" height="12" width="1" material="" geometry=""></a-box>
+
+        <a-sky src="#fons"></a-sky>
+        <a-plane position="0 0 0" rotation="-90 0 0" width="100" height="100" src="#texturaterra"></a-plane>
+        <a-sphere position="100 70 200" rotation="90 0 90" src="#sol" radius="20" material="" geometry=""></a-sphere>
+        
+        
+        <a-dodecahedron id="esmou" position="8 1 -6" rotation="0 30 0" radius="3" src="#rojo"
+        trigger-on-proximity="target: #camera; distance: 5; animation: property: position; to: 8 2 -6; dur: 1000; loop: false">
+      </a-dodecahedron>
+
+      <a-sphere id="segundoObjeto" position="100 70 200" rotation="90 0 90" src="#rojo" radius="2" material="" geometry=""
+      trigger-on-proximity="target: #camera; distance: 5; animation: property: radius; to: 21; dur: 1000; loop: false"></a-sphere>
+
+
+
+
+
+
+        <a-sphere position="-3 5 10" radius="1" src="#sole"
+        animation="property: position; from: -3 5 -200; to: -3 5 100; dur: 1000; loop: true"></a-sphere>
+        <a-sphere position="-7 10 10" radius="1" src="#sole"
+        animation="property: position; from: -7 10 -200; to: -7 10 100; dur: 2000; loop: true"></a-sphere>
+        <a-sphere position="14 1 14" radius="1" src="#sole"
+        animation="property: position; from: 14 1 -200; to: 14 -1 100; dur: 1500; loop: true"></a-sphere>
+        <a-sphere position="-14 1 14" radius="1" src="#sole"
+        animation="property: position; from: -14 1 -200; to: -14 0 100; dur: 1200; loop: true"></a-sphere>
+        <a-sphere position="-12 3 14" radius="1" src="#sole"
+        animation="property: position; from: -12 3 -200; to: -12 6 100; dur: 1700; loop: true"></a-sphere>
+        <a-sphere position="2 6 12" radius="1" src="#sole"
+        animation="property: position; from: 2 6 -200; to: 2 4 100; dur: 1300; loop: true"></a-sphere>
+<a-sphere position="15 5 20" radius="1" src="#sole"
+animation="property: position; from: 15 5 -200; to: 15 2 100; dur: 1700; loop: true"></a-sphere>
+<a-sphere position="-15 6 20" radius="1" src="#sole"
+animation="property: position; from: -15 6 -200; to: -15 9 100; dur: 1750; loop: true"></a-sphere>
+<a-sphere position="3 12 22" radius="1" src="#sole"
+animation="property: position; from: 3 12 -200; to: 3 8 100; dur: 2200; loop: true"></a-sphere>
+<a-sphere position="-3 13 22" radius="1" src="#sole"
+animation="property: position; from: -3 13 -200; to: -3 9 100; dur: 2250; loop: true"></a-sphere>
+<a-sphere position="6 8 18" radius="1" src="#sole"
+animation="property: position; from: 6 8 -200; to: 6 4 100; dur: 1550; loop: true"></a-sphere>
+<a-sphere position="-6 4 18" radius="1" src="#sole"
+animation="property: position; from: -6 4 -200; to: -6 7 100; dur: 1450; loop: true"></a-sphere>
+<a-sphere position="10 2 16" radius="1" src="#sole"
+animation="property: position; from: 10 2 -200; to: 10 6 100; dur: 1350; loop: true"></a-sphere>
+<a-sphere position="-10 9 21" radius="1" src="#sole"
+animation="property: position; from: -10 9 -200; to: -10 5 100; dur: 1950; loop: true"></a-sphere>
+<a-sphere position="1 7 15" radius="1" src="#sole"
+animation="property: position; from: 1 7 -200; to: 1 10 100; dur: 1600; loop: true"></a-sphere>
+<a-sphere position="-1 2 12" radius="1" src="#sole"
+animation="property: position; from: -1 2 -200; to: -1 6 100; dur: 1250; loop: true"></a-sphere>
+<a-sphere position="13 11 23" radius="1" src="#sole"
+animation="property: position; from: 13 11 -200; to: 13 7 100; dur: 2300; loop: true"></a-sphere>
+<a-sphere position="-13 3 19" radius="1" src="#sole"
+animation="property: position; from: -13 3 -200; to: -13 6 100; dur: 1500; loop: true"></a-sphere>
+<a-sphere position="4 14 25" radius="1" src="#sole"
+animation="property: position; from: 4 14 -200; to: 4 10 100; dur: 2400; loop: true"></a-sphere>
+<a-sphere position="-4 15 25" radius="1" src="#sole"
+animation="property: position; from: -4 15 -200; to: -4 11 100; dur: 2450; loop: true"></a-sphere>
+<a-sphere position="-35 5 20" radius="1" src="#sole"
+animation="property: position; from: -35 5 -400; to: -35 8 130; dur: 2600; loop: true"></a-sphere>
+<a-sphere position="38 12 25" radius="1" src="#sole"
+animation="property: position; from: 38 12 -400; to: 38 6 120; dur: 2900; loop: true"></a-sphere>
+<a-sphere position="-28 18 30" radius="1" src="#sole"
+animation="property: position; from: -28 18 -400; to: -28 10 140; dur: 3100; loop: true"></a-sphere>
+<a-sphere position="22 -2 15" radius="1" src="#sole"
+animation="property: position; from: 22 -2 -400; to: 22 4 110; dur: 2400; loop: true"></a-sphere>
+<a-sphere position="-18 9 18" radius="1" src="#sole"
+animation="property: position; from: -18 9 -400; to: -18 13 125; dur: 2700; loop: true"></a-sphere>
+<a-sphere position="5 22 35" radius="1" src="#sole"
+animation="property: position; from: 5 22 -400; to: 5 14 140; dur: 3300; loop: true"></a-sphere>
+<a-sphere position="-42 14 40" radius="1" src="#sole"
+animation="property: position; from: -42 14 -400; to: -42 9 135; dur: 3500; loop: true"></a-sphere>
+<a-sphere position="41 3 28" radius="1" src="#sole"
+animation="property: position; from: 41 3 -400; to: 41 7 120; dur: 2500; loop: true"></a-sphere>
+<a-sphere position="-10 25 50" radius="1" src="#sole"
+animation="property: position; from: -10 25 -400; to: -10 15 140; dur: 3600; loop: true"></a-sphere>
+<a-sphere position="12 0 10" radius="1" src="#sole"
+animation="property: position; from: 12 0 -400; to: 12 6 105; dur: 2300; loop: true"></a-sphere>
+<a-sphere position="-55 10 30" radius="1" src="#sole"
+animation="property: position; from: -55 10 -400; to: -55 12 140; dur: 3800; loop: true"></a-sphere>
+<a-sphere position="55 6 30" radius="1" src="#sole"
+animation="property: position; from: 55 6 -400; to: 55 9 140; dur: 3900; loop: true"></a-sphere>
+<a-sphere position="-60 20 45" radius="1" src="#sole"
+animation="property: position; from: -60 20 -400; to: -60 14 150; dur: 4200; loop: true"></a-sphere>
+<a-sphere position="60 -3 22" radius="1" src="#sole"
+animation="property: position; from: 60 -3 -400; to: 60 4 130; dur: 3400; loop: true"></a-sphere>
+<a-sphere position="0 35 60" radius="1" src="#sole"
+animation="property: position; from: 0 35 -400; to: 0 20 150; dur: 4500; loop: true"></a-sphere>
+<a-sphere position="-25 30 55" radius="1" src="#sole"
+animation="property: position; from: -25 30 -400; to: -25 18 145; dur: 4100; loop: true"></a-sphere>
+<a-sphere position="30 28 50" radius="1" src="#sole"
+animation="property: position; from: 30 28 -400; to: 30 16 145; dur: 4050; loop: true"></a-sphere>
+<a-sphere position="-20 -5 12" radius="1" src="#sole"
+animation="property: position; from: -20 -5 -400; to: -20 2 110; dur: 2200; loop: true"></a-sphere>
+<a-sphere position="20 -4 14" radius="1" src="#sole"
+animation="property: position; from: 20 -4 -400; to: 20 3 115; dur: 2250; loop: true"></a-sphere>
+<a-sphere position="0 -6 10" radius="1" src="#sole"
+animation="property: position; from: 0 -6 -400; to: 0 1 105; dur: 2100; loop: true"></a-sphere>
+<a-sphere position="-80 15 80" radius="1" src="#sole"
+animation="property: position; from: -80 15 -500; to: -80 10 180; dur: 5200; loop: true"></a-sphere>
+<a-sphere position="80 18 75" radius="1" src="#sole"
+animation="property: position; from: 80 18 -500; to: 80 12 180; dur: 5100; loop: true"></a-sphere>
+<a-sphere position="0 40 90" radius="1" src="#sole"
+animation="property: position; from: 0 40 -500; to: 0 22 190; dur: 5600; loop: true"></a-sphere>
+<a-sphere position="-75 10 150" radius="1" src="#sole"
+animation="property: position; from: -75 10 -600; to: -75 8 150; dur: 5200; loop: true"></a-sphere>
+<a-sphere position="-60 5 130" radius="1" src="#sole"
+animation="property: position; from: -60 5 -550; to: -60 7 140; dur: 4800; loop: true"></a-sphere>
+<a-sphere position="-50 15 170" radius="1" src="#sole"
+animation="property: position; from: -50 15 -650; to: -50 10 160; dur: 5400; loop: true"></a-sphere>
+<a-sphere position="-40 20 180" radius="1" src="#sole"
+animation="property: position; from: -40 20 -700; to: -40 12 170; dur: 5600; loop: true"></a-sphere>
+<a-sphere position="-30 8 140" radius="1" src="#sole"
+animation="property: position; from: -30 8 -500; to: -30 6 130; dur: 5000; loop: true"></a-sphere>
+<a-sphere position="75 12 150" radius="1" src="#sole"
+animation="property: position; from: 75 12 -600; to: 75 10 150; dur: 5200; loop: true"></a-sphere>
+<a-sphere position="60 7 130" radius="1" src="#sole"
+animation="property: position; from: 60 7 -550; to: 60 9 140; dur: 4800; loop: true"></a-sphere>
+<a-sphere position="50 18 170" radius="1" src="#sole"
+animation="property: position; from: 50 18 -650; to: 50 12 160; dur: 5400; loop: true"></a-sphere>
+<a-sphere position="40 22 180" radius="1" src="#sole"
+animation="property: position; from: 40 22 -700; to: 40 14 170; dur: 5600; loop: true"></a-sphere>
+<a-sphere position="30 10 140" radius="1" src="#sole"
+animation="property: position; from: 30 10 -500; to: 30 8 130; dur: 5000; loop: true"></a-sphere>
+<a-sphere position="0 25 190" radius="1" src="#sole"
+animation="property: position; from: 0 25 -750; to: 0 20 180; dur: 5800; loop: true"></a-sphere>
+<a-sphere position="-10 20 200" radius="1" src="#sole"
+animation="property: position; from: -10 20 -720; to: -10 15 190; dur: 5700; loop: true"></a-sphere>
+<a-sphere position="10 18 210" radius="1" src="#sole"
+animation="property: position; from: 10 18 -710; to: 10 13 200; dur: 5600; loop: true"></a-sphere>
+<a-sphere position="-5 15 190" radius="1" src="#sole"
+animation="property: position; from: -5 15 -700; to: -5 10 180; dur: 5500; loop: true"></a-sphere>
+<a-sphere position="5 12 180" radius="1" src="#sole"
+animation="property: position; from: 5 12 -680; to: 5 8 170; dur: 5400; loop: true"></a-sphere>
+<a-sphere position="-80 30 220" radius="1" src="#sole"
+animation="property: position; from: -80 30 -800; to: -80 20 200; dur: 6000; loop: true"></a-sphere>
+<a-sphere position="80 28 220" radius="1" src="#sole"
+animation="property: position; from: 80 28 -800; to: 80 18 200; dur: 6000; loop: true"></a-sphere>
+<a-sphere position="0 35 250" radius="1" src="#sole"
+animation="property: position; from: 0 35 -850; to: 0 25 230; dur: 6200; loop: true"></a-sphere>
+<a-sphere position="-30 32 240" radius="1" src="#sole"
+animation="property: position; from: -30 32 -820; to: -30 22 220; dur: 6100; loop: true"></a-sphere>
+<a-sphere position="30 30 240" radius="1" src="#sole"
+animation="property: position; from: 30 30 -820; to: 30 20 220; dur: 6100; loop: true"></a-sphere>
+<a-sphere position="-70 5 160" radius="1" src="#sole"
+animation="property: position; from: -70 5 -650; to: -70 6 150; dur: 5400; loop: true"></a-sphere>
+<a-sphere position="-65 12 170" radius="1" src="#sole"
+animation="property: position; from: -65 12 -670; to: -65 10 160; dur: 5500; loop: true"></a-sphere>
+<a-sphere position="-55 18 180" radius="1" src="#sole"
+animation="property: position; from: -55 18 -690; to: -55 14 170; dur: 5600; loop: true"></a-sphere>
+<a-sphere position="-78 5 150" radius="1" src="#sole" animation="property: position; from: -78 5 -780; to: -78 10 160; dur: 5800; loop: true"></a-sphere>
+<a-sphere position="-75 12 170" radius="1" src="#sole" animation="property: position; from: -75 12 -750; to: -75 15 180; dur: 6000; loop: true"></a-sphere>
+<a-sphere position="-72 20 140" radius="1" src="#sole" animation="property: position; from: -72 20 -720; to: -72 18 150; dur: 5700; loop: true"></a-sphere>
+<a-sphere position="-70 7 160" radius="1" src="#sole" animation="property: position; from: -70 7 -700; to: -70 12 170; dur: 5600; loop: true"></a-sphere>
+<a-sphere position="-68 15 180" radius="1" src="#sole" animation="property: position; from: -68 15 -680; to: -68 10 190; dur: 5900; loop: true"></a-sphere>
+<a-sphere position="-65 10 150" radius="1" src="#sole" animation="property: position; from: -65 10 -650; to: -65 14 160; dur: 5500; loop: true"></a-sphere>
+<a-sphere position="-62 25 170" radius="1" src="#sole" animation="property: position; from: -62 25 -620; to: -62 20 180; dur: 6100; loop: true"></a-sphere>
+<a-sphere position="-60 18 140" radius="1" src="#sole" animation="property: position; from: -60 18 -600; to: -60 16 150; dur: 5800; loop: true"></a-sphere>
+<a-sphere position="-58 22 160" radius="1" src="#sole" animation="property: position; from: -58 22 -580; to: -58 17 170; dur: 6000; loop: true"></a-sphere>
+<a-sphere position="-55 5 180" radius="1" src="#sole" animation="property: position; from: -55 5 -550; to: -55 10 190; dur: 5700; loop: true"></a-sphere>
+<a-sphere position="-52 12 150" radius="1" src="#sole" animation="property: position; from: -52 12 -520; to: -52 16 160; dur: 5500; loop: true"></a-sphere>
+<a-sphere position="-50 20 170" radius="1" src="#sole" animation="property: position; from: -50 20 -500; to: -50 18 180; dur: 5800; loop: true"></a-sphere>
+<a-sphere position="-48 7 140" radius="1" src="#sole" animation="property: position; from: -48 7 -480; to: -48 12 150; dur: 5600; loop: true"></a-sphere>
+<a-sphere position="-45 15 160" radius="1" src="#sole" animation="property: position; from: -45 15 -450; to: -45 10 170; dur: 5900; loop: true"></a-sphere>
+<a-sphere position="-42 10 180" radius="1" src="#sole" animation="property: position; from: -42 10 -420; to: -42 14 190; dur: 5700; loop: true"></a-sphere>
+<a-sphere position="-40 25 150" radius="1" src="#sole" animation="property: position; from: -40 25 -400; to: -40 20 160; dur: 6000; loop: true"></a-sphere>
+<a-sphere position="-38 18 170" radius="1" src="#sole" animation="property: position; from: -38 18 -380; to: -38 16 180; dur: 5800; loop: true"></a-sphere>
+<a-sphere position="-35 22 140" radius="1" src="#sole" animation="property: position; from: -35 22 -350; to: -35 17 150; dur: 5600; loop: true"></a-sphere>
+<a-sphere position="-32 5 160" radius="1" src="#sole" animation="property: position; from: -32 5 -320; to: -32 10 170; dur: 5900; loop: true"></a-sphere>
+<a-sphere position="-30 15 180" radius="1" src="#sole" animation="property: position; from: -30 15 -300; to: -30 10 190; dur: 5700; loop: true"></a-sphere>
+<a-sphere position="-77 8 155" radius="1" src="#sole" animation="property: position; from: -77 8 -770; to: -77 12 165; dur: 4800; loop: true"></a-sphere>
+<a-sphere position="-73 17 175" radius="1" src="#sole" animation="property: position; from: -73 17 -730; to: -73 13 185; dur: 5000; loop: true"></a-sphere>
+<a-sphere position="-69 5 145" radius="1" src="#sole" animation="property: position; from: -69 5 -690; to: -69 8 155; dur: 4700; loop: true"></a-sphere>
+<a-sphere position="-66 12 165" radius="1" src="#sole" animation="property: position; from: -66 12 -660; to: -66 15 175; dur: 4900; loop: true"></a-sphere>
+<a-sphere position="-63 20 185" radius="1" src="#sole" animation="property: position; from: -63 20 -630; to: -63 17 195; dur: 5100; loop: true"></a-sphere>
+<a-sphere position="-61 7 155" radius="1" src="#sole" animation="property: position; from: -61 7 -610; to: -61 10 165; dur: 4800; loop: true"></a-sphere>
+<a-sphere position="-59 15 175" radius="1" src="#sole" animation="property: position; from: -59 15 -590; to: -59 12 185; dur: 5000; loop: true"></a-sphere>
+<a-sphere position="-56 10 145" radius="1" src="#sole" animation="property: position; from: -56 10 -560; to: -56 14 155; dur: 4700; loop: true"></a-sphere>
+<a-sphere position="-53 25 165" radius="1" src="#sole" animation="property: position; from: -53 25 -530; to: -53 20 175; dur: 5100; loop: true"></a-sphere>
+<a-sphere position="-51 18 185" radius="1" src="#sole" animation="property: position; from: -51 18 -510; to: -51 16 195; dur: 4900; loop: true"></a-sphere>
+<a-sphere position="-49 22 155" radius="1" src="#sole" animation="property: position; from: -49 22 -490; to: -49 17 165; dur: 4800; loop: true"></a-sphere>
+<a-sphere position="-46 5 175" radius="1" src="#sole" animation="property: position; from: -46 5 -460; to: -46 10 185; dur: 5000; loop: true"></a-sphere>
+<a-sphere position="-44 15 145" radius="1" src="#sole" animation="property: position; from: -44 15 -440; to: -44 10 155; dur: 4700; loop: true"></a-sphere>
+<a-sphere position="-41 10 165" radius="1" src="#sole" animation="property: position; from: -41 10 -410; to: -41 14 175; dur: 4900; loop: true"></a-sphere>
+<a-sphere position="-39 25 185" radius="1" src="#sole" animation="property: position; from: -39 25 -390; to: -39 20 195; dur: 4100; loop: true"></a-sphere>
+<a-sphere position="-36 18 155" radius="1" src="#sole" animation="property: position; from: -36 18 -360; to: -36 16 165; dur: 4800; loop: true"></a-sphere>
+<a-sphere position="-34 5 175" radius="1" src="#sole" animation="property: position; from: -34 5 -340; to: -34 10 185; dur: 5000; loop: true"></a-sphere>
+<a-sphere position="-33 15 145" radius="1" src="#sole" animation="property: position; from: -33 15 -330; to: -33 10 155; dur: 4700; loop: true"></a-sphere>
+<a-sphere position="-31 10 165" radius="1" src="#sole" animation="property: position; from: -31 10 -310; to: -31 14 175; dur: 4900; loop: true"></a-sphere>
+<a-sphere position="-30 25 185" radius="1" src="#sole" animation="property: position; from: -30 25 -300; to: -30 20 195; dur: 5100; loop: true"></a-sphere>
+
+        </a-scene>
+
+  </body>
+  <a-dodecahedron id="esmou" position="8 2 -6" rotation="0 30 0" radius="3" src="#bicicletes"></a-dodecahedron>
+</html>
+
+<script>
+let objetoPrincipal = document.querySelector("#esmou");
+let segundoObjeto = document.querySelector("#pilarExtra");
+
+objetoPrincipal.addEventListener("click", () => {
+
+ 
+  objetoPrincipal.setAttribute("animation", {
+    property: "position",
+    to: "100 70 200",
+    dur: 10000,
+    easing: "easeOutQuad"
+  });
+
+ 
+  segundoObjeto.setAttribute("animation", {
+    property: "radius",
+    to: "21",
+    dur: 10000,
+    easing: "easeOutQuad"
+  });
+
+});
+</script>
+
+
+        </script>
